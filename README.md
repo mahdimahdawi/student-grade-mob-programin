@@ -1,75 +1,53 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+HackerLand University has the following grading policy:
 
-# Project Name
+Every student receives a  in the inclusive range from  to .
+Any  less than  is a failing grade.
+Sam is a professor at the university and likes to round each student's  according to these rules:
 
-> Description the project.
+If the difference between the  and the next multiple of  is less than , round  up to the next multiple of .
+If the value of  is less than , no rounding occurs as the result will still be a failing grade.
+Examples
 
+ round to  (85 - 84 is less than 3)
+ do not round (result is less than 40)
+ do not round (60 - 57 is 3 or higher)
+Given the initial value of  for each of Sam's  students, write code to automate the rounding process.
 
-## Built With
+Function Description
 
-- Major languages
-- Frameworks
-- Technologies used
+Complete the function gradingStudents in the editor below.
 
-## Live Demo (if available)
+gradingStudents has the following parameter(s):
 
-[Live Demo Link](https://livedemo.com)
+int grades[n]: the grades before rounding
+Returns
 
+int[n]: the grades after rounding as appropriate
+Input Format
 
-## Getting Started
+The first line contains a single integer, , the number of students.
+Each line  of the  subsequent lines contains a single integer, .
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Constraints
 
+Sample Input 0
 
-To get a local copy up and running follow these simple example steps.
+4
+73
+67
+38
+33
+Sample Output 0
 
-### Prerequisites
+75
+67
+40
+33
+Explanation 0
 
-### Setup
+image
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+Student  received a , and the next multiple of  from  is . Since , the student's grade is rounded to .
+Student  received a , and the next multiple of  from  is . Since , the grade will not be modified and the student's final grade is .
+Student  received a , and the next multiple of  from  is . Since , the student's grade will be rounded to .
+Student  received a grade below , so the grade will not be modified and the student's final grade is .
